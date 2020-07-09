@@ -197,11 +197,11 @@ ul li a:hover{
 $stars: multiple-box-shadow(2000);
     
 .stars {
-    width: 1px;
-    height: 1px;
+    width: 2px;
+    height: 2px;
     background: transparent;
     box-shadow: $stars;
-    
+    animation: blinkStar 3s infinite;
         &:after {
             content: "";
             position: absolute;
@@ -211,5 +211,18 @@ $stars: multiple-box-shadow(2000);
             background: white;
             box-shadow: $stars;
         }
+}
+
+@keyframes blinkStar
+{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
     
