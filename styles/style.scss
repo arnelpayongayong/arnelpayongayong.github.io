@@ -201,6 +201,57 @@ $stars: multiple-box-shadow(2000);
     height: 2px;
     background: transparent;
     box-shadow: $stars;
+    animation: blinkStar 10s infinite;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 2000px;
+            width: 1px;
+            height: 1px;
+            background: white;
+            box-shadow: $stars;
+        }
+}
+
+.stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $stars;
+    animation: blinkStar 3s infinite;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 2000px;
+            width: 1px;
+            height: 1px;
+            background: white;
+            box-shadow: $stars;
+        }
+}
+
+.stars3 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $stars;
+    animation: blinkStar 3s infinite;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 2000px;
+            width: 1px;
+            height: 1px;
+            background: white;
+            box-shadow: $stars;
+        }
+}
+
+.stars4 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $stars;
     animation: blinkStar 3s infinite;
         &:after {
             content: "";
