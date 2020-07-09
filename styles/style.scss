@@ -43,7 +43,6 @@ ul li a:hover{
     top: 70px;
     width: 100%;
     height: 80vh;
-    background-image: url('../images/background.png');
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,12 +70,13 @@ ul li a:hover{
     border-bottom: 2px solid white;
 }
 .social{
+    display: block;
     height: 100px;
     color: white;
     display: flex;
     font-size: 35px;
     justify-content: center;
-    width: 65%;
+    width: auto;
 
 }
 .social .item{
@@ -111,6 +111,10 @@ ul li a:hover{
     border-radius: 5px 20px 5px;
     
 }
+.rectangle a{
+    color: #333333;
+    text-decoration: none;
+}
 .rectangle:hover{
     background-color: #2c3e50;
     color: white;
@@ -126,7 +130,7 @@ ul li a:hover{
 
 .rocket img{
     height: 150px;
-    animation: shakeXY 6s infinite;
+    animation: shakeXY 4s infinite ease-in-out;
 } 
 .projects{
     height: 500px;
@@ -135,15 +139,59 @@ ul li a:hover{
 
 @keyframes shakeXY {
     0%{
-        transform: translateY(-5px);
+        transform: translateY(1000px);
+        opacity: 0.20;
     }
-    5%{
-        transform: translateY(5px);
+    10%{
+        transform: rotateY(10deg);
+        opacity: 0.50;
     }
-    50%{
-        transform: translateY(100px);
+    15%{
+        transform: rotateY(50deg);
+        opacity: 0.70;
+    }
+    20%{
+        transform: rotateY(100deg);
+        opacity: 0.80;
+    }
+    25%{
+        transform: rotateY(140deg);
+        opacity: 0.90;
+    }
+    30%{
+        transform: rotateY(160deg);
+        opacity: 100;
     }
     100%{
         transform: translateY(0px);
+        opacity: 100;
     }
 }
+
+@function multiple-box-shadow ($n) {
+	$value: '#{random(2000)}px #{random(2000)}px #FFF';
+	@for $i from 2 through $n {
+		$value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+	}
+	@return unquote($value);
+}
+
+$stars: multiple-box-shadow(2000);
+    
+.stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $stars;
+    
+        &:after {
+            content: "";
+            position: absolute;
+            top: 2000px;
+            width: 1px;
+            height: 1px;
+            background: white;
+            box-shadow: $stars;
+        }
+}
+    
