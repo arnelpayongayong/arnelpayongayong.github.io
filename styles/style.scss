@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: #333333;
+    background-color: black;
     font-family: 'Raleway';
     color: azure;
 }
@@ -76,7 +76,8 @@ ul li a:hover{
     display: flex;
     font-size: 35px;
     justify-content: center;
-    width: auto;
+    align-items: center;
+    width: 100%;
 
 }
 .social .item{
@@ -134,7 +135,24 @@ ul li a:hover{
 } 
 .projects{
     height: 500px;
+    background-color: rgba(236, 240, 241, 0.20);
 
+}
+.group-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 250px;
+    width: 500px;
+    background-color: red;
+    margin: 20px;
+}
+.in-progress{
+    font-size: 100px;
+    text-align: center;
 }
 
 @keyframes shakeXY {
