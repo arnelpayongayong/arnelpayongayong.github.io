@@ -1,0 +1,216 @@
+@import url(e:\CSS TRAINING\portfolio\styles\style1360.css);
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #333333;
+  font-family: 'Raleway';
+  color: azure;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  margin-top: 20px;
+  z-index: 1;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+}
+
+ul li {
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  font-size: larger;
+}
+
+.logo {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+}
+
+.main-section {
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  height: 80vh;
+  background-image: url("../images/background.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.moon {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
+
+.moon img {
+  height: 400px;
+}
+
+.name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 10%;
+  margin-top: 80px;
+  margin-left: 100px;
+  font-size: 80px;
+  z-index: 1;
+}
+
+.fullname {
+  letter-spacing: 3px;
+  margin-left: 10px;
+  border-bottom: 2px solid white;
+}
+
+.social {
+  height: 100px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 35px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 65%;
+}
+
+.social .item {
+  margin-left: 30px;
+}
+
+.social a {
+  color: white;
+}
+
+.social .item:hover {
+  font-size: larger;
+}
+
+.hire-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 50%;
+  margin-top: 100px;
+}
+
+.rectangle {
+  background-color: white;
+  height: 100px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px solid red;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333333;
+  border-radius: 5px 20px 5px;
+}
+
+.rectangle:hover {
+  background-color: #2c3e50;
+  color: white;
+  cursor: none;
+}
+
+.rocket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.rocket img {
+  height: 150px;
+  -webkit-animation: shakeXY 6s infinite;
+          animation: shakeXY 6s infinite;
+}
+
+.projects {
+  height: 500px;
+}
+
+@-webkit-keyframes shakeXY {
+  0% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  5% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes shakeXY {
+  0% {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
+  5% {
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+  }
+  50% {
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+/*# sourceMappingURL=style.css.map */

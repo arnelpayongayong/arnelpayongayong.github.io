@@ -1,3 +1,6 @@
+@import  './style1360.css';
+
+
 *{
     padding: 0;
     margin: 0;
@@ -9,9 +12,10 @@ body{
     color: azure;
 }
 .navbar{
-    position: absolute;
+    position: fixed;
     width: 100%;
     margin-top: 20px;
+    z-index: 1;
 }
 ul{
     display: flex;
@@ -39,6 +43,11 @@ ul li a:hover{
     top: 70px;
     width: 100%;
     height: 80vh;
+    background-image: url('../images/background.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1
 }
 .moon{
     position: absolute;
@@ -53,7 +62,8 @@ ul li a:hover{
     height:10%;
     margin-top: 80px;
     margin-left: 100px;
-    font-size: 40px;
+    font-size: 80px;
+    z-index: 1;
 }
 .fullname{
     letter-spacing: 3px;
@@ -66,7 +76,7 @@ ul li a:hover{
     display: flex;
     font-size: 35px;
     justify-content: center;
-    width: 73%;
+    width: 65%;
 
 }
 .social .item{
@@ -105,6 +115,7 @@ ul li a:hover{
     background-color: #2c3e50;
     color: white;
     cursor: none;
+
 }
 .rocket{
     display: flex;
@@ -112,10 +123,14 @@ ul li a:hover{
     justify-content: center;
     width: 100%;
 }
+
 .rocket img{
     height: 150px;
-    height: 200px;
-    animation: shakeXY 5s infinite;
+    animation: shakeXY 6s infinite;
+} 
+.projects{
+    height: 500px;
+
 }
 
 @keyframes shakeXY {
