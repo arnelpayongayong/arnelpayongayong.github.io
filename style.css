@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #333333;
+    font-family: 'Raleway';
+    color: azure;
+}
+.navbar{
+    position: absolute;
+    width: 100%;
+    margin-top: 20px;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+ul li{
+    margin-left: 10px;
+    margin-right: 30px;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover{
+    font-size: larger;
+}
+.logo{
+    position: absolute;
+    top: 0px;
+    left: 10px;
+}
+.main-section{
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 80vh;
+}
+.moon{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+.moon img{
+    height: 400px;
+}
+.name{
+    display: flex;
+    height:10%;
+    margin-top: 80px;
+    margin-left: 100px;
+    font-size: 40px;
+}
+.fullname{
+    letter-spacing: 3px;
+    margin-left: 10px;
+    border-bottom: 2px solid white;
+}
+.social{
+    height: 100px;
+    color: white;
+    display: flex;
+    font-size: 35px;
+    justify-content: center;
+    width: 73%;
+
+}
+.social .item{
+    margin-left: 30px;
+}
+.social a{
+    color: white;
+}
+.social .item:hover{
+    font-size: larger;
+}
+.hire-me{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    margin-top: 100px;
+}
+.rectangle{
+    background-color: white;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px solid red;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #333333;
+    border-radius: 5px 20px 5px;
+    
+}
+.rectangle:hover{
+    background-color: #2c3e50;
+    color: white;
+    cursor: none;
+}
+.rocket{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.rocket img{
+    height: 150px;
+    height: 200px;
+    animation: shakeXY 5s infinite;
+}
+
+@keyframes shakeXY {
+    0%{
+        transform: translateY(-5px);
+    }
+    5%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(100px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
