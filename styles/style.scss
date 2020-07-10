@@ -12,14 +12,22 @@ body{
     color: azure;
 }
 .navbar{
-    position: fixed;
-    width: 100%;
     margin-top: 20px;
     z-index: 1;
 }
+.topnav {
+    overflow: hidden;
+}
+#navbar-right{
+    right: 0;
+    width: auto;
+}
+.icon{
+    display: none;
+}
 ul{
     display: flex;
-    justify-content: flex-end;
+    float: right;
     list-style-type: none;
 }
 ul li{
@@ -34,9 +42,9 @@ ul li a:hover{
     font-size: larger;
 }
 .logo{
-    position: absolute;
-    top: 0px;
-    left: 10px;
+    position: fixed;
+    top: 15px;
+    left: 25px;
 }
 .main-section{
     position: absolute;
@@ -135,21 +143,13 @@ ul li a:hover{
 } 
 .projects{
     height: 500px;
-    background-color: rgba(236, 240, 241, 0.20);
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fff;
+    text-align: left;
 
 }
-.group-box{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.box{
-    height: 250px;
-    width: 500px;
-    background-color: red;
-    margin: 20px;
-}
+
 .in-progress{
     font-size: 100px;
     text-align: center;

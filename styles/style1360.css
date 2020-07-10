@@ -48,6 +48,11 @@
         border : none;
         font-size: 50px;
     }
+
+    .group-box{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -108,4 +113,53 @@
     .im{
         display: none;
     }
+
+    .group-box{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
 }
+
+
+@media only screen and (max-width: 800px) {
+    .topnav li{
+        display: none;
+    }
+    #navbar-menu{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: block;
+    }
+    #navbar-menu .icon{
+        display: block;
+        font-size: larger;
+        text-align: right;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive{
+        width: 100%;
+        position: relative;
+        background-color: black;
+    }
+
+    .topnav.responsive li {
+        float: none;
+        display: block;
+        text-align: left;
+        padding: 20px;
+    }
+    
+    
+    .group-box{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
