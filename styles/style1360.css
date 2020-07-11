@@ -122,12 +122,17 @@
 
 
 @media only screen and (max-width: 800px) {
+    .logo{
+        top: auto;
+        left: 0;
+        position: relative;
+    }
     .topnav li{
         display: none;
     }
     #navbar-menu{
         position: fixed;
-        top: 0;
+        top: 20px;
         width: 100%;
         display: block;
     }
