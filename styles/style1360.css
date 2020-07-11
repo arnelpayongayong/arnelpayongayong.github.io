@@ -171,5 +171,8 @@
     .projects{
         width: 100%;
     }
+    .name{
+        height: auto;
+    }
 }
 
