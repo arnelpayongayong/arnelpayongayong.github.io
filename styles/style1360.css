@@ -132,7 +132,9 @@
     }
     #navbar-menu{
         position: fixed;
-        top: 20px;
+        top: 0;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.644);
         width: 100%;
         display: block;
     }
@@ -165,6 +167,9 @@
     .group-box{
         display: grid;
         grid-template-columns: auto;
+    }
+    .projects{
+        width: 100%;
     }
 }
 
