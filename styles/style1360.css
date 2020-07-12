@@ -60,6 +60,7 @@
     }
     .box-image{
         height: 250px;
+        margin: 0 auto;
     }
     .box-image img{ 
         max-width: 100%;
@@ -185,5 +186,24 @@
     .name{
         height: auto;
     }
+    .box-main{
+        grid-template-columns: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .box-footer{
+        text-align: center;
+    }
 }
 
+@media only screen and (max-width: 375px)
+{
+    .box-main{
+        grid-template-columns: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .box-footer{
+        text-align: center;
+    }
+}
