@@ -14,9 +14,17 @@ body{
 .navbar{
     margin-top: 20px;
     z-index: 1;
+    background-color: black;
 }
 .topnav {
     overflow: hidden;
+    position: fixed;
+    width: 100%;
+    display:flex;
+    justify-content: flex-end;
+    text-align: right;
+    background: black;
+    padding: 10px;
 }
 #navbar-right{
     right: 0;
@@ -60,6 +68,25 @@ ul li a:hover{
     position: absolute;
     z-index: -1;
     top: 0;
+    animation: moveToRight 2.5s ease-in ;
+}
+@keyframes moveToRight{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+@keyframes moveToLeft{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
 }
 .moon img{
     height: 400px;
@@ -76,6 +103,7 @@ ul li a:hover{
     letter-spacing: 3px;
     margin-left: 10px;
     border-bottom: 2px solid white;
+    animation: moveToLeft 1.5s ease-in ;
 }
 .social{
     display: block;
@@ -143,26 +171,25 @@ ul li a:hover{
 } 
 .projects{
     height: auto;
-    width: 80%;
-    margin: 0 auto;
-    background-color: #fff;
-    text-align: left;
-    padding: 20px;
+    background-color:white;
+    margin: 0 5%;
+    z-index: 1;
 }
 .group-box{
     display: grid;
     grid-template-rows: auto auto auto;
-    margin: 5px;
-
+    padding: 20px;
 }
 .box{
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: auto;
     margin-bottom: 20px;
+    padding: 15px;
     align-items: center;
     padding: 5px;
     border-bottom: 2px solid black;
+    z-index: 1;
 }
 .box-main{
     display: grid;
@@ -186,7 +213,9 @@ ul li a:hover{
 .box-footer{
     display: block;
     color: black;
-    margin-top: 10px;
+    text-align: right;
+    width: 100%;
+
 }
 .box-footer a{
     color: black;
@@ -196,6 +225,26 @@ ul li a:hover{
     background-color: black;
     color: white;
 }
+
+
+.btn{
+    display: relative;
+    padding: 15px 20px 15px 20px;
+    font-family: 'Raleway';
+    color: white;
+    border: none;
+} 
+.btn-primary{
+    background-color: #2c3e50;
+}
+.btn-disabled{
+    text-decoration: line-through;
+    color: white !important;
+}
+.btn-primary:hover{
+    color: black;
+}
+
 @keyframes shakeXY {
     0%{
         transform: translateY(1000px);
