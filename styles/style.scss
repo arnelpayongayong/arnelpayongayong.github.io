@@ -24,7 +24,7 @@ body{
     justify-content: flex-end;
     text-align: right;
     background: black;
-    padding: 10px;
+    padding: 20px;
 }
 #navbar-right{
     right: 0;
@@ -51,7 +51,7 @@ ul li a:hover{
 }
 .logo{
     position: fixed;
-    top: 15px;
+    top: 12px;
     left: 25px;
 }
 .main-section{
@@ -228,7 +228,28 @@ ul li a:hover{
     text-decoration: none;
     color: white;
 }
-
+.interest{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin: 0 5%;
+    padding: 10px;
+    z-index: 1;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+}
+.interest-item{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.title{
+    color: white;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-size: 35px;
+}
 .btn{
     display: relative;
     padding: 15px 20px 15px 20px;
@@ -247,6 +268,34 @@ ul li a:hover{
     color: black;
 }
 
+.footer{
+    height: 150px;
+    margin-top: 20%;
+    background-color: rgb(0,0,0);
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.footer-title{
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    padding: 10px;
+}
+.footer-item{
+    height: 150px;
+}
+.footer-list{
+    display: block;
+    float: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.footer-list li{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 15px;
+}
 @keyframes shakeXY {
     0%{
         transform: translateY(1000px);

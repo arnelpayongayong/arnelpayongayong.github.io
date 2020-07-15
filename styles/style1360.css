@@ -138,6 +138,10 @@
         top: auto;
         left: 0;
         position: relative;
+        text-align: center;
+    }
+    .logo img{
+        text-align: center;
     }
     .topnav li{
         display: none;
@@ -193,6 +197,9 @@
     }
     .box-footer{
         text-align: center;
+    }
+    .footer{
+        grid-template-columns: auto;
     }
 }
 
