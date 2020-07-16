@@ -65,6 +65,13 @@
     .box-image img{ 
         max-width: 100%;
     }
+
+    .interest-group{
+        grid-template-columns: auto auto;
+    }
+    .interest-item img{
+        height: 250px;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
@@ -129,6 +136,14 @@
     .group-box{
         display: grid;
         grid-template-columns: auto;
+    }
+
+    .interest-group{
+        grid-template-columns: auto auto;
+    }
+
+    .interest-item img{
+        height: 150px;
     }
 }
 
@@ -200,6 +215,13 @@
     }
     .footer{
         grid-template-columns: auto;
+    }
+    .interest-group{
+        grid-template-columns: auto;
+    }
+
+    .interest-item img{
+        height: 250px;
     }
 }
 
